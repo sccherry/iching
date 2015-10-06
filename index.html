@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"
+  ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>Chooser</title>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="Container" tabindex="0"
+  ng-controller="RandomController" ng-click="choose()" ng-keypress="keyChoose($event)" ng-class="className">
+
+  <p class="Choice">{{ choice.name }}</p>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

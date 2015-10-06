@@ -1,0 +1,43 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.Container {
+  display: flex;
+
+  width: 100vw;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.Choice {
+  font-size: 3rem;
+}
+
+.Skin--0 {
+  color: red;
+  background-color: green;
+}
+
+.Skin--1 {
+  color: yellow;
+  background-color: purple;
+}
+
+.Skin--2 {
+  color: blue;
+  background-color: orange;
+}
