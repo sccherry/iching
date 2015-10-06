@@ -1,7 +1,386 @@
-[{
-  "name": "Choice 1"
-},{
-  "name": "Choice 2"
-},{
-  "name": "Choice 3"
-}]
+[
+  {
+    "name": {
+      "chi": "乾",
+      "eng": "qián"
+    }
+  },
+  {
+    "name": {
+      "chi": "坤",
+      "eng": "kūn"
+    }
+  },
+  {
+    "name": {
+      "chi": "屯",
+      "eng": "zhūn"
+    }
+  },
+  {
+    "name": {
+      "chi": "蒙",
+      "eng": "méng"
+    }
+  },
+  {
+    "name": {
+      "chi": "需",
+      "eng": "xū"
+    }
+  },
+  {
+    "name": {
+      "chi": "訟",
+      "eng": "sòng"
+    }
+  },
+  {
+    "name": {
+      "chi": "師",
+      "eng": "shī"
+    }
+  },
+  {
+    "name": {
+      "chi": "比",
+      "eng": "bǐ"
+    }
+  },
+  {
+    "name": {
+      "chi": "小畜",
+      "eng": "xiǎo chù"
+    }
+  },
+  {
+    "name": {
+      "chi": "履",
+      "eng": "lǚ"
+    }
+  },
+  {
+    "name": {
+      "chi": "泰",
+      "eng": "tài"
+    }
+  },
+  {
+    "name": {
+      "chi": "否",
+      "eng": "pǐ"
+    }
+  },
+  {
+    "name": {
+      "chi": "同人",
+      "eng": "tóng rén"
+    }
+  },
+  {
+    "name": {
+      "chi": "大有",
+      "eng": "dà yǒu"
+    }
+  },
+  {
+    "name": {
+      "chi": "謙",
+      "eng": "qiān"
+    }
+  },
+  {
+    "name": {
+      "chi": "豫",
+      "eng": "yù"
+    }
+  },
+  {
+    "name": {
+      "chi": "隨",
+      "eng": "suí"
+    }
+  },
+  {
+    "name": {
+      "chi": "蠱",
+      "eng": "gŭ"
+    }
+  },
+  {
+    "name": {
+      "chi": "臨",
+      "eng": "lín"
+    }
+  },
+  {
+    "name": {
+      "chi": "觀",
+      "eng": "guān"
+    }
+  },
+  {
+    "name": {
+      "chi": "噬嗑",
+      "eng": "shì kè"
+    }
+  },
+  {
+    "name": {
+      "chi": "賁",
+      "eng": "bì"
+    }
+  },
+  {
+    "name": {
+      "chi": "剝",
+      "eng": "bō"
+    }
+  },
+  {
+    "name": {
+      "chi": "復",
+      "eng": "fù"
+    }
+  },
+  {
+    "name": {
+      "chi": "無妄",
+      "eng": "wú wàng"
+    }
+  },
+  {
+    "name": {
+      "chi": "大畜",
+      "eng": "dà chù"
+    }
+  },
+  {
+    "name": {
+      "chi": "頤",
+      "eng": "yí"
+    }
+  },
+  {
+    "name": {
+      "chi": "大過",
+      "eng": "dà guò"
+    }
+  },
+  {
+    "name": {
+      "chi": "坎",
+      "eng": "kǎn"
+    }
+  },
+  {
+    "name": {
+      "chi": "離",
+      "eng": "lí"
+    }
+  },
+  {
+    "name": {
+      "chi": "咸",
+      "eng": "xián"
+    }
+  },
+  {
+    "name": {
+      "chi": "恆",
+      "eng": "héng"
+    }
+  },
+  {
+    "name": {
+      "chi": "遯",
+      "eng": "dùn"
+    }
+  },
+  {
+    "name": {
+      "chi": "大壯",
+      "eng": "dà zhuàng"
+    }
+  },
+  {
+    "name": {
+      "chi": "晉",
+      "eng": "jìn"
+    }
+  },
+  {
+    "name": {
+      "chi": "明夷",
+      "eng": "míng yí"
+    }
+  },
+  {
+    "name": {
+      "chi": "家人",
+      "eng": "jiā rén"
+    }
+  },
+  {
+    "name": {
+      "chi": "睽",
+      "eng": "kuí"
+    }
+  },
+  {
+    "name": {
+      "chi": "蹇",
+      "eng": "jiǎn"
+    }
+  },
+  {
+    "name": {
+      "chi": "解",
+      "eng": "xiè"
+    }
+  },
+  {
+    "name": {
+      "chi": "損",
+      "eng": "sǔn"
+    }
+  },
+  {
+    "name": {
+      "chi": "益",
+      "eng": "yì"
+    }
+  },
+  {
+    "name": {
+      "chi": "夬",
+      "eng": "guài"
+    }
+  },
+  {
+    "name": {
+      "chi": "姤",
+      "eng": "gòu"
+    }
+  },
+  {
+    "name": {
+      "chi": "萃",
+      "eng": "cuì"
+    }
+  },
+  {
+    "name": {
+      "chi": "升",
+      "eng": "shēng"
+    }
+  },
+  {
+    "name": {
+      "chi": "困",
+      "eng": "kùn"
+    }
+  },
+  {
+    "name": {
+      "chi": "井",
+      "eng": "jǐng"
+    }
+  },
+  {
+    "name": {
+      "chi": "革",
+      "eng": "gé"
+    }
+  },
+  {
+    "name": {
+      "chi": "鼎",
+      "eng": "dǐng"
+    }
+  },
+  {
+    "name": {
+      "chi": "震",
+      "eng": "zhèn"
+    }
+  },
+  {
+    "name": {
+      "chi": "艮",
+      "eng": "gèn"
+    }
+  },
+  {
+    "name": {
+      "chi": "漸",
+      "eng": "jiàn"
+    }
+  },
+  {
+    "name": {
+      "chi": "歸妹",
+      "eng": "guī mèi"
+    }
+  },
+  {
+    "name": {
+      "chi": "豐",
+      "eng": "fēng"
+    }
+  },
+  {
+    "name": {
+      "chi": "旅",
+      "eng": "lǚ"
+    }
+  },
+  {
+    "name": {
+      "chi": "巽",
+      "eng": "xùn"
+    }
+  },
+  {
+    "name": {
+      "chi": "兌",
+      "eng": "duì"
+    }
+  },
+  {
+    "name": {
+      "chi": "渙",
+      "eng": "huàn"
+    }
+  },
+  {
+    "name": {
+      "chi": "節",
+      "eng": "jié"
+    }
+  },
+  {
+    "name": {
+      "chi": "中孚",
+      "eng": "zhōng fú"
+    }
+  },
+  {
+    "name": {
+      "chi": "小過",
+      "eng": "xiǎo guò"
+    }
+  },
+  {
+    "name": {
+      "chi": "既濟",
+      "eng": "jì jì"
+    }
+  },
+  {
+    "name": {
+      "chi": "未濟",
+      "eng": "wèi jì"
+    }
+  }
+]
