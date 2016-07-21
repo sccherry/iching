@@ -1,18 +1,662 @@
 <!DOCTYPE html>
-<html lang="en"
-  ng-app="app">
+<html class="no-js" lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Chooser</title>
+  <title>I-Ching</title>
 
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="Container" tabindex="0"
-  ng-controller="RandomController" ng-click="choose()" ng-keypress="keyChoose($event)" ng-class="className">
+<body class="Shell">
+  <div class="Shell-content">
+    <main role="main">
+      <section id="qián">
+        <div class="Hexagram">
+          <div class="Hexagram-character">乾</div>
+        </div>
+      </section>
 
-  <p class="Choice">{{ choice.name.chi }}</p>
+      <section id="kūn">
+        <div class="Hexagram">
+          <div class="Hexagram-character">坤</div>
+        </div>
+      </section>
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+      <section id="zhūn">
+        <div class="Hexagram">
+          <div class="Hexagram-character">屯</div>
+        </div>
+      </section>
+
+      <section id="méng">
+        <div class="Hexagram">
+          <div class="Hexagram-character">蒙</div>
+        </div>
+      </section>
+
+      <section id="xū">
+        <div class="Hexagram">
+          <div class="Hexagram-character">需</div>
+        </div>
+      </section>
+
+      <section id="sòng">
+        <div class="Hexagram">
+          <div class="Hexagram-character">訟</div>
+        </div>
+      </section>
+
+      <section id="shī">
+        <div class="Hexagram">
+          <div class="Hexagram-character">師</div>
+        </div>
+      </section>
+
+      <section id="bǐ">
+        <div class="Hexagram">
+          <div class="Hexagram-character">比</div>
+        </div>
+      </section>
+
+      <section id="xiǎo-chù">
+        <div class="Hexagram">
+          <div class="Hexagram-character">小畜</div>
+        </div>
+      </section>
+
+      <section id="lǚ">
+        <div class="Hexagram">
+          <div class="Hexagram-character">履</div>
+        </div>
+      </section>
+
+      <section id="tài">
+        <div class="Hexagram">
+          <div class="Hexagram-character">泰</div>
+        </div>
+      </section>
+
+      <section id="pǐ">
+        <div class="Hexagram">
+          <div class="Hexagram-character">否</div>
+        </div>
+      </section>
+
+      <section id="tóng-rén">
+        <div class="Hexagram">
+          <div class="Hexagram-character">同人</div>
+        </div>
+      </section>
+
+      <section id="dà-yǒu">
+        <div class="Hexagram">
+          <div class="Hexagram-character">大有</div>
+        </div>
+      </section>
+
+      <section id="qiān">
+        <div class="Hexagram">
+          <div class="Hexagram-character">謙</div>
+        </div>
+      </section>
+
+      <section id="yù">
+        <div class="Hexagram">
+          <div class="Hexagram-character">豫</div>
+        </div>
+      </section>
+
+      <section id="suí">
+        <div class="Hexagram">
+          <div class="Hexagram-character">隨</div>
+        </div>
+      </section>
+
+      <section id="gŭ">
+        <div class="Hexagram">
+          <div class="Hexagram-character">蠱</div>
+        </div>
+      </section>
+
+      <section id="lín">
+        <div class="Hexagram">
+          <div class="Hexagram-character">臨</div>
+        </div>
+      </section>
+
+      <section id="guān">
+        <div class="Hexagram">
+          <div class="Hexagram-character">觀</div>
+        </div>
+      </section>
+
+      <section id="shì-kè">
+        <div class="Hexagram">
+          <div class="Hexagram-character">噬嗑</div>
+        </div>
+      </section>
+
+      <section id="bì">
+        <div class="Hexagram">
+          <div class="Hexagram-character">賁</div>
+        </div>
+      </section>
+
+      <section id="bō">
+        <div class="Hexagram">
+          <div class="Hexagram-character">剝</div>
+        </div>
+      </section>
+
+      <section id="fù">
+        <div class="Hexagram">
+          <div class="Hexagram-character">復</div>
+        </div>
+      </section>
+
+      <section id="wú-wàng">
+        <div class="Hexagram">
+          <div class="Hexagram-character">無妄</div>
+        </div>
+      </section>
+
+      <section id="dà-chù">
+        <div class="Hexagram">
+          <div class="Hexagram-character">大畜</div>
+        </div>
+      </section>
+
+      <section id="yí">
+        <div class="Hexagram">
+          <div class="Hexagram-character">頤</div>
+        </div>
+      </section>
+
+      <section id="dà-guò">
+        <div class="Hexagram">
+          <div class="Hexagram-character">大過</div>
+        </div>
+      </section>
+
+      <section id="kǎn">
+        <div class="Hexagram">
+          <div class="Hexagram-character">坎</div>
+        </div>
+      </section>
+
+      <section id="lí">
+        <div class="Hexagram">
+          <div class="Hexagram-character">離</div>
+        </div>
+      </section>
+
+      <section id="xián">
+        <div class="Hexagram">
+          <div class="Hexagram-character">咸</div>
+        </div>
+      </section>
+
+      <section id="héng">
+        <div class="Hexagram">
+          <div class="Hexagram-character">恆</div>
+        </div>
+      </section>
+
+      <section id="dùn">
+        <div class="Hexagram">
+          <div class="Hexagram-character">遯</div>
+        </div>
+      </section>
+
+      <section id="dà-zhuàng">
+        <div class="Hexagram">
+          <div class="Hexagram-character">大壯</div>
+        </div>
+      </section>
+
+      <section id="jìn">
+        <div class="Hexagram">
+          <div class="Hexagram-character">晉</div>
+        </div>
+      </section>
+
+      <section id="míng-yí">
+        <div class="Hexagram">
+          <div class="Hexagram-character">明夷</div>
+        </div>
+      </section>
+
+      <section id="jiā-rén">
+        <div class="Hexagram">
+          <div class="Hexagram-character">家人</div>
+        </div>
+      </section>
+
+      <section id="kuí">
+        <div class="Hexagram">
+          <div class="Hexagram-character">睽</div>
+        </div>
+      </section>
+
+      <section id="jiǎn">
+        <div class="Hexagram">
+          <div class="Hexagram-character">蹇</div>
+        </div>
+      </section>
+
+      <section id="xiè">
+        <div class="Hexagram">
+          <div class="Hexagram-character">解</div>
+        </div>
+      </section>
+
+      <section id="sǔn">
+        <div class="Hexagram">
+          <div class="Hexagram-character">損</div>
+        </div>
+      </section>
+
+      <section id="yì">
+        <div class="Hexagram">
+          <div class="Hexagram-character">益</div>
+        </div>
+      </section>
+
+      <section id="guài">
+        <div class="Hexagram">
+          <div class="Hexagram-character">夬</div>
+        </div>
+      </section>
+
+      <section id="gòu">
+        <div class="Hexagram">
+          <div class="Hexagram-character">姤</div>
+        </div>
+      </section>
+
+      <section id="cuì">
+        <div class="Hexagram">
+          <div class="Hexagram-character">萃</div>
+        </div>
+      </section>
+
+      <section id="shēng">
+        <div class="Hexagram">
+          <div class="Hexagram-character">升</div>
+        </div>
+      </section>
+
+      <section id="kùn">
+        <div class="Hexagram">
+          <div class="Hexagram-character">困</div>
+        </div>
+      </section>
+
+      <section id="jǐng">
+        <div class="Hexagram">
+          <div class="Hexagram-character">井</div>
+        </div>
+      </section>
+
+      <section id="gé">
+        <div class="Hexagram">
+          <div class="Hexagram-character">革</div>
+        </div>
+      </section>
+
+      <section id="dǐng">
+        <div class="Hexagram">
+          <div class="Hexagram-character">鼎</div>
+        </div>
+      </section>
+
+      <section id="zhèn">
+        <div class="Hexagram">
+          <div class="Hexagram-character">震</div>
+        </div>
+      </section>
+
+      <section id="gèn">
+        <div class="Hexagram">
+          <div class="Hexagram-character">艮</div>
+        </div>
+      </section>
+
+      <section id="jiàn">
+        <div class="Hexagram">
+          <div class="Hexagram-character">漸</div>
+        </div>
+      </section>
+
+      <section id="guī-mèi">
+        <div class="Hexagram">
+          <div class="Hexagram-character">歸妹</div>
+        </div>
+      </section>
+
+      <section id="fēng">
+        <div class="Hexagram">
+          <div class="Hexagram-character">豐</div>
+        </div>
+      </section>
+
+      <section id="lǚ">
+        <div class="Hexagram">
+          <div class="Hexagram-character">旅</div>
+        </div>
+      </section>
+
+      <section id="xùn">
+        <div class="Hexagram">
+          <div class="Hexagram-character">巽</div>
+        </div>
+      </section>
+
+      <section id="duì">
+        <div class="Hexagram">
+          <div class="Hexagram-character">兌</div>
+        </div>
+      </section>
+
+      <section id="huàn">
+        <div class="Hexagram">
+          <div class="Hexagram-character">渙</div>
+        </div>
+      </section>
+
+      <section id="jié">
+        <div class="Hexagram">
+          <div class="Hexagram-character">節</div>
+        </div>
+      </section>
+
+      <section id="zhōng-fú">
+        <div class="Hexagram">
+          <div class="Hexagram-character">中孚</div>
+        </div>
+      </section>
+
+      <section id="xiǎo-guò">
+        <div class="Hexagram">
+          <div class="Hexagram-character">小過</div>
+        </div>
+      </section>
+
+      <section id="jì-jì">
+        <div class="Hexagram">
+          <div class="Hexagram-character">既濟</div>
+        </div>
+      </section>
+
+      <section id="wèi-jì">
+        <div class="Hexagram">
+          <div class="Hexagram-character">未濟</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="Shell-navigation">
+    <nav role="navigation">
+      <ul>
+        <li>
+          <a href="#qián">乾</a>
+        </li>
+
+        <li>
+          <a href="#kūn">坤</a>
+        </li>
+
+        <li>
+          <a href="#zhūn">屯</a>
+        </li>
+
+        <li>
+          <a href="#méng">蒙</a>
+        </li>
+
+        <li>
+          <a href="#xū">需</a>
+        </li>
+
+        <li>
+          <a href="#sòng">訟</a>
+        </li>
+
+        <li>
+          <a href="#shī">師</a>
+        </li>
+
+        <li>
+          <a href="#bǐ">比</a>
+        </li>
+
+        <li>
+          <a href="#xiǎo-chù">小畜</a>
+        </li>
+
+        <li>
+          <a href="#lǚ">履</a>
+        </li>
+
+        <li>
+          <a href="#tài">泰</a>
+        </li>
+
+        <li>
+          <a href="#pǐ">否</a>
+        </li>
+
+        <li>
+          <a href="#tóng-rén">同人</a>
+        </li>
+
+        <li>
+          <a href="#dà-yǒu">大有</a>
+        </li>
+
+        <li>
+          <a href="#qiān">謙</a>
+        </li>
+
+        <li>
+          <a href="#yù">豫</a>
+        </li>
+
+        <li>
+          <a href="#suí">隨</a>
+        </li>
+
+        <li>
+          <a href="#gŭ">蠱</a>
+        </li>
+
+        <li>
+          <a href="#lín">臨</a>
+        </li>
+
+        <li>
+          <a href="#guān">觀</a>
+        </li>
+
+        <li>
+          <a href="#shì-kè">噬嗑</a>
+        </li>
+
+        <li>
+          <a href="#bì">賁</a>
+        </li>
+
+        <li>
+          <a href="#bō">剝</a>
+        </li>
+
+        <li>
+          <a href="#fù">復</a>
+        </li>
+
+        <li>
+          <a href="#wú-wàng">無妄</a>
+        </li>
+
+        <li>
+          <a href="#dà-chù">大畜</a>
+        </li>
+
+        <li>
+          <a href="#yí">頤</a>
+        </li>
+
+        <li>
+          <a href="#dà-guò">大過</a>
+        </li>
+
+        <li>
+          <a href="#kǎn">坎</a>
+        </li>
+
+        <li>
+          <a href="#lí">離</a>
+        </li>
+
+        <li>
+          <a href="#xián">咸</a>
+        </li>
+
+        <li>
+          <a href="#héng">恆</a>
+        </li>
+
+        <li>
+          <a href="#dùn">遯</a>
+        </li>
+
+        <li>
+          <a href="#dà-zhuàng">大壯</a>
+        </li>
+
+        <li>
+          <a href="#jìn">晉</a>
+        </li>
+
+        <li>
+          <a href="#míng-yí">明夷</a>
+        </li>
+
+        <li>
+          <a href="#jiā-rén">家人</a>
+        </li>
+
+        <li>
+          <a href="#kuí">睽</a>
+        </li>
+
+        <li>
+          <a href="#jiǎn">蹇</a>
+        </li>
+
+        <li>
+          <a href="#xiè">解</a>
+        </li>
+
+        <li>
+          <a href="#sǔn">損</a>
+        </li>
+
+        <li>
+          <a href="#yì">益</a>
+        </li>
+
+        <li>
+          <a href="#guài">夬</a>
+        </li>
+
+        <li>
+          <a href="#gòu">姤</a>
+        </li>
+
+        <li>
+          <a href="#cuì">萃</a>
+        </li>
+
+        <li>
+          <a href="#shēng">升</a>
+        </li>
+
+        <li>
+          <a href="#kùn">困</a>
+        </li>
+
+        <li>
+          <a href="#jǐng">井</a>
+        </li>
+
+        <li>
+          <a href="#gé">革</a>
+        </li>
+
+        <li>
+          <a href="#dǐng">鼎</a>
+        </li>
+
+        <li>
+          <a href="#zhèn">震</a>
+        </li>
+
+        <li>
+          <a href="#gèn">艮</a>
+        </li>
+
+        <li>
+          <a href="#jiàn">漸</a>
+        </li>
+
+        <li>
+          <a href="#guī-mèi">歸妹</a>
+        </li>
+
+        <li>
+          <a href="#fēng">豐</a>
+        </li>
+
+        <li>
+          <a href="#lǚ">旅</a>
+        </li>
+
+        <li>
+          <a href="#xùn">巽</a>
+        </li>
+
+        <li>
+          <a href="#duì">兌</a>
+        </li>
+
+        <li>
+          <a href="#huàn">渙</a>
+        </li>
+
+        <li>
+          <a href="#jié">節</a>
+        </li>
+
+        <li>
+          <a href="#zhōng-fú">中孚</a>
+        </li>
+
+        <li>
+          <a href="#xiǎo-guò">小過</a>
+        </li>
+
+        <li>
+          <a href="#jì-jì">既濟</a>
+        </li>
+
+        <li>
+          <a href="#wèi-jì">未濟</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -3,41 +3,55 @@ html {
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-
   margin: 0;
 }
 
-p {
-  margin: 0;
+/* https://www.smashingmagazine.com/2015/12/reimagining-single-page-applications-progressive-enhancement */
+main > * {
+  display: none;
 }
 
-.Container {
+main > *:target {
+  display: block;
+}
+
+main > *:last-child {
+  display: block;
+}
+
+main > *:target ~ * {
+  display: none;
+}
+
+.Shell {
+  display: flex;
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+.Shell-content {
+  flex: 1;
+}
+
+.Shell-navigation {
+  width: 25%;
+  order: -1;
+  overflow-y: auto;
+}
+
+.js .Shell-navigation {
+  display: none;
+}
+
+.Hexagram {
   display: flex;
 
-  width: 100vw;
   height: 100vh;
 
   justify-content: center;
   align-items: center;
 }
 
-.Choice {
-  font-size: 3rem;
-}
-
-.Skin--0 {
-  color: red;
-  background-color: green;
-}
-
-.Skin--1 {
-  color: yellow;
-  background-color: purple;
-}
-
-.Skin--2 {
-  color: blue;
-  background-color: orange;
+.Hexagram-character {
+  font-size: calc(1em + 10vw);
 }
