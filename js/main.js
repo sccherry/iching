@@ -1,63 +1,84 @@
 (function () {
   'use strict';
 
-  var app = {
-    routeChange: function () {
-      window.location.hash = '#' + app.hashes[app.hexagram.select()];
-    },
-    init: function () {
-      app.hashes = map(document.querySelectorAll('section'), function (el) {
-        return el.getAttribute('id');
-      });
+  var hashes = map(el => {
+      return el.getAttribute('id');
+    })( document.querySelectorAll('section') ),
+    hashLength = hashes.length;
 
-      app.hexagram = new Hexagram(app.hashes.length);
+  function randomHashIndex() {
+    return scale( hashes.length )( random() );
+  }
 
-      window.addEventListener('keydown', function (e) {
-        // Space bar
-        if (e.keyCode === 32 && !e.repeat) {
-          app.routeChange();
-        }
-      });
+  function model( e ) {
+    return hashes[randomHashIndex()];
+  }
 
-      if (!window.location.hash) {
-        app.routeChange();
+  function view( model ) {
+    window.location.hash = model;
+  }
+
+  function render( e ) {
+    return view( model( e ) );
+  }
+
+  /**
+   * Events
+   */
+
+  function onDOMContentLoaded( e ) {
+    document.querySelector('html').className = 'js';
+
+    if ( !window.location.hash ) {
+      render( e );
+    }
+  }
+
+  function onKeyup( e ) {
+    // Space bar
+    if ( e.keyCode === 32 ) {
+      render( e );
+    }
+  }
+
+  document.addEventListener( 'DOMContentLoaded', onDOMContentLoaded );
+  window.addEventListener( 'keyup', onKeyup );
+
+
+  /**
+   * Utility functions
+   */
+
+  function forEach( fn ) {
+    return function( list ) {
+      var i = 0,
+        len = list.length;
+
+      for ( i; i < len; i += 1 ) {
+        fn( list[i] );
       }
     }
-  };
+  }
 
-  // https://toddmotto.com/ditch-the-array-foreach-call-nodelist-hack/
-  function forEach(array, callback, scope) {
-    for (let i = 0; i < array.length; i += 1) {
-      callback.call(scope, array[i], i);
+  function map( fn ) {
+    return function( list ) {
+      var mapped = [];
+
+      forEach(item => {
+        mapped.push( fn( item ) );
+      })( list );
+
+      return mapped;
     }
   }
 
-  function map(array, callback, scope) {
-    var mapped = [];
-
-    forEach(array, function (value, index) {
-      mapped.push(callback(value, index));
-    }, scope);
-
-    return mapped;
+  function random() {
+    return Math.random();
   }
 
-  function Hexagram(num) {
-    this.num = num;
+  function scale( ceil ) {
+    return function( num ) {
+      return Math.floor( num * ceil );
+    }
   }
-
-  Hexagram.prototype.select = function () {
-    // TODO more accurate way of selecting index
-    let index = Math.floor(Math.random() * this.num);
-
-    return index;
-  };
-
-  document.addEventListener('DOMContentLoaded', function (e) {
-    let html = document.querySelector('html');
-
-    html.className = 'js';
-
-    app.init();
-  });
 }());
