@@ -6,44 +6,43 @@ body {
   margin: 0;
 }
 
-/* https://www.smashingmagazine.com/2015/12/reimagining-single-page-applications-progressive-enhancement */
-main > * {
+.o-router > * {
   display: none;
 }
 
-main > *:target {
+.o-router > *:target {
   display: block;
 }
 
-main > *:last-child {
+.o-router > *:last-child {
   display: block;
 }
 
-main > *:target ~ * {
+.o-router > *:target ~ * {
   display: none;
 }
 
-.Shell {
+.o-shell {
   display: flex;
   overflow-y: hidden;
   height: 100vh;
 }
 
-.Shell-content {
+.o-shell__content {
   flex: 1;
 }
 
-.Shell-navigation {
+.o-shell__navigation {
   width: 25%;
   order: -1;
   overflow-y: auto;
 }
 
-.js .Shell-navigation {
+.js .o-shell__navigation {
   display: none;
 }
 
-.Hexagram {
+.c-hexagram {
   display: flex;
 
   height: 100vh;
@@ -52,6 +51,6 @@ main > *:target ~ * {
   align-items: center;
 }
 
-.Hexagram-character {
+.c-hexagram__character {
   font-size: calc(1em + 10vw);
 }
