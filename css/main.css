@@ -47,10 +47,22 @@ body {
 
   height: 100vh;
 
+  font-size: calc(1em + 5vw);
+  text-decoration: none;
+
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.c-hexagram__number {
+}
+
+.c-hexagram__image {
 }
 
 .c-hexagram__character {
-  font-size: calc(1em + 10vw);
+}
+
+.c-hexagram__character--transliterated {
 }
