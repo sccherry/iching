@@ -1,0 +1,68 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.o-router > * {
+  display: none;
+}
+
+.o-router > *:target {
+  display: block;
+}
+
+.o-router > *:last-child {
+  display: block;
+}
+
+.o-router > *:target ~ * {
+  display: none;
+}
+
+.o-shell {
+  display: flex;
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+.o-shell__content {
+  flex: 1;
+}
+
+.o-shell__navigation {
+  width: 25%;
+  order: -1;
+  overflow-y: auto;
+}
+
+.js .o-shell__navigation {
+  display: none;
+}
+
+.c-hexagram {
+  display: flex;
+
+  height: 100vh;
+
+  font-size: calc(1em + 5vw);
+  text-decoration: none;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.c-hexagram__number {
+}
+
+.c-hexagram__image {
+}
+
+.c-hexagram__character {
+}
+
+.c-hexagram__character--transliterated {
+}

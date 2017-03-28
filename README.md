@@ -1,4 +1,4 @@
-Chooser
+I Ching
 =======
 
-A random selector app.
+An I Ching selector app.
