@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I Ching</title>
+
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body class="o-shell">
+  <div class="o-shell__content">
+    <main class="o-router" role="main">
+      {% for item in data %}
+        <section id="{{ item.eng | replace(" ", "-") }}">
+          <a class="c-hexagram" href="{{ item.href }}">
+            <span>{{ loop.index }}</span>
+            <img src="{{ item.src }}" alt="{{ item.chi }} ({{ item.eng }})">
+            <span>{{ item.chi }}</span>
+            <span>({{ item.eng }})</span>
+          </a>
+        </section>
+      {% endfor %}
+    </main>
+  </div>
+
+  <div class="o-shell__navigation">
+    <nav role="navigation">
+      <ul>
+        {% for item in data %}
+          <li>
+            <a href="#{{ item.eng | replace(" ", "-") }}">{{ item.chi }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+
+  <script src="./main.js" defer></script>
+</body>
+</html>
